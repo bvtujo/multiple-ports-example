@@ -13,8 +13,15 @@ image:
   # Docker build arguments. For additional overrides: https://aws.github.io/copilot-cli/docs/manifest/backend-service/#image-build
   build: Dockerfile
   # Port exposed through your container to route traffic to it.
-  port: 8080
+  port: 5050
 
+http:
+  path: '/'
+  healthcheck: '/'
+  additional_rules:
+    - path: '/admin'
+      target_port: 8080
+      healthcheck: '/admin'
 cpu: 256       # Number of CPU units for the task.
 memory: 512    # Amount of memory in MiB used by the task.
 count: 1       # Number of tasks that should be running in your service.
