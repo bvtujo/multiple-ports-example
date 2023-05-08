@@ -1,0 +1,18 @@
+{
+  "name": "cloud-cron",
+  "version": "1.0.0",
+  "description": "frontend server",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/bvtujo/cloud-cron"
+  },
+  "author": "bvtujo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
