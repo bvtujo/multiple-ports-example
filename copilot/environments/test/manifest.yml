@@ -10,7 +10,7 @@ type: Environment
 # network:
 #   vpc:
 #     id:
-
+cdn: true
 # Configure the load balancers in your environment, once created.
 # http:
 #   public:
